@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "831997451087",
+    "firebase_url": "https://gatherup-6325b.firebaseio.com",
+    "project_id": "gatherup-6325b",
+    "storage_bucket": "gatherup-6325b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831997451087:android:b5f117b0d068d5e2",
+        "android_client_info": {
+          "package_name": "jackandfriends.appname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831997451087-a3lgda9ifc7dkkkp8qae0bq07t3m1953.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdwyFOjMa_TXryvDO1WToyvh1tlSfMC14"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
