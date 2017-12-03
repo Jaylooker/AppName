@@ -33,7 +33,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         // Views
         mEmailField = findViewById(R.id.emailField);
         mPasswordField = findViewById(R.id.passwordField);
-
+        findViewById(R.id.btn_login).setOnClickListener(this);
+        findViewById(R.id.link_signup).setOnClickListener(this);
 
         // [START initialize_auth]
         mAuth = FirebaseAuth.getInstance();
@@ -99,6 +100,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            finish();
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.

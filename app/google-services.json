@@ -37,18 +37,15 @@
           "status": 1
         },
         "appinvite_service": {
-<<<<<<< HEAD
           "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "831997451087-a3lgda9ifc7dkkkp8qae0bq07t3m1953.apps.googleusercontent.com",
               "client_type": 3
             }
-          ]
-=======
+          ],
           "status": 1,
           "other_platform_oauth_client": []
->>>>>>> development
         },
         "ads_service": {
           "status": 2
