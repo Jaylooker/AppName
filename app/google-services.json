@@ -37,6 +37,7 @@
           "status": 1
         },
         "appinvite_service": {
+<<<<<<< HEAD
           "status": 2,
           "other_platform_oauth_client": [
             {
@@ -44,6 +45,10 @@
               "client_type": 3
             }
           ]
+=======
+          "status": 1,
+          "other_platform_oauth_client": []
+>>>>>>> development
         },
         "ads_service": {
           "status": 2
