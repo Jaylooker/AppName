@@ -21,6 +21,18 @@
         android:paddingLeft="24dp">
 
         <!-- Email Label -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="J & F"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,4 +81,5 @@
             android:onClick="createAccount"/>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

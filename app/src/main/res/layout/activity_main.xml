@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context="jackandfriends.appname.MainActivity">
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/luckyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:layout_gravity="center"
+            android:text="@string/lucky" />
+
+        <Button
+            android:id="@+id/addEventbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addevent"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
