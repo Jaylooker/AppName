@@ -24,11 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".EventCreation" />
-        <activity android:name=".EventView"></activity>
+        <activity android:name=".EventView" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD5WXKCY6-z5f6HyegWZ2gksWf2_DZtHlY"/>
+            android:value="AIzaSyD5WXKCY6-z5f6HyegWZ2gksWf2_DZtHlY" />
+
+        <activity android:name=".SignUpActivity"></activity>
     </application>
+
 </manifest>

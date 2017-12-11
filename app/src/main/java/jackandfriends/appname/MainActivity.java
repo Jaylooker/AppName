@@ -1,6 +1,7 @@
 package jackandfriends.appname;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String TAG = "MainActivity";
 
     private Button luckyButton;
-    private Button addEventButton;
+    private FloatingActionButton addEventButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,10 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 random = (int) Math.random() * count + 1;
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     // TODO: handle the post
-                    if (i == count) {
-                        viewEvent(postSnapshot);
-                    }
-                    i++;
+                    viewEvent(postSnapshot);
                 }
 
             }
@@ -100,6 +98,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void viewEvent(DataSnapshot snapshot) {
 
+        Intent intent = new Intent(this, EventView.class);
+        intent.putExtra("key", snapshot.getKey() + "");
+        startActivity(intent);
     }
 
     @Override
